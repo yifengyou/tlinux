@@ -1,0 +1,7 @@
+[Ceph]
+name=Ceph packages for $basearch
+baseurl=http://mirrors.tencent.com/ceph/rpm-octopus/el8/$basearch
+enabled=1
+gpgcheck=1
+type=rpm-md
+gpgkey=https://mirrors.tencent.com/ceph/keys/release.asc
