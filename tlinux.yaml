@@ -1,0 +1,26 @@
+document: modulemd
+version: 2
+data:
+    name: tlinux
+    stream: 1.1
+    summary: tlinux module test
+    description: tlinux 1.1 
+    license:
+        module: [ MIT ]
+    dependencies:
+        - buildrequires:
+                platform: [el8.2]
+          requires:
+                platform: [el8.2]
+    profiles:
+        common:
+            rpms:
+                - tencentos-release
+    api:
+        rpms:
+            - tencentos-release
+    components:
+        rpms:
+            tlinux:
+                rationale: Module API.
+                ref: el8.2
